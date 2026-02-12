@@ -1,11 +1,21 @@
-# Rudiments buddy
+# Rudiments Buddy
 
-Percussion practice precision analyzer - measures timing precision against ideal metronome grid. 
-Project stemmed from the need to precisely measure and grade rudiments progress. I'm learning percussion for about a year now 
-and I wanted to see how I've progressed so far. 
+Rudiments Buddy is a **percussion practice precision analyzer** that measures how accurately a drummer plays against an ideal metronome grid.  
+I built it to track my own progress in rudiments practice and to turn timing precision into clear, quantitative feedback.
 
 ![Screenshot](docs/screenshot.png)
 
+---
+
+## Overview
+
+- Detects drum hits from an audio recording (WAV/MP3) using **librosa**
+- Compares each hit to an ideal timing grid based on **tempo** and **subdivision**
+- Computes **timing error** and assigns a **grade (A–F)** with color feedback
+- Provides a simple **Tkinter GUI** for non‑technical users (musicians)
+
+This project combines **signal processing**, **Python scripting**, and a **user-facing GUI**
+.
 ## Features
 
 - beat detection using special module for Music Information Retrival - librosa
@@ -54,3 +64,9 @@ This app is in really simple form now, but I plan on implementing more features 
 - as I will be progressing with rudiments I will add more of them to the library
 - more appealing GUI by implementing Flask and switching to Web UI so I can host this app on my local server
 - exporting results to CSV and adding feature to compare previous results in a graphic form
+
+## What I Learned
+
+- working with real‑world, noisy audio data
+- applying basic signal processing concepts in Python
+- combining data processing logic with a simple GUI
